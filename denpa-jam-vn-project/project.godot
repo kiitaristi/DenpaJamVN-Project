@@ -12,7 +12,10 @@ config_version=5
 
 config/name="DenpaJam VN Project"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+
+[autoload]
+
+FmodManager="*uid://cds10pm7hwn3p"
 
 [display]
 
@@ -22,6 +25,10 @@ window/stretch/aspect="expand"
 [dotnet]
 
 project/assembly_name="DenpaJam VN Project"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/fmod/plugin.cfg")
 
 [physics]
 
